@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pong</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: monospace;
+      color: #fff;
+    }
+    canvas {
+      border: 2px solid #fff;
+    }
+    #controls {
+      margin-top: 12px;
+      font-size: 13px;
+      color: #aaa;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="pong" width="800" height="500"></canvas>
+  <div id="controls">
+    Player 1: W / S &nbsp;&nbsp;&nbsp; Player 2: ↑ / ↓ &nbsp;&nbsp;&nbsp; Press SPACE to start / pause
+  </div>
+  <script src="pong.js"></script>
+</body>
+</html>
