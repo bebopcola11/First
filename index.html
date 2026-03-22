@@ -6,7 +6,24 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      background: #000;
+      /* Milk base */
+      background-color: #f0ead8;
+      /* Froot-Loops style O's: each layer is one colored ring tiled at an offset */
+      background-image:
+        radial-gradient(ellipse 9px 7px at 50% 50%, transparent 38%, #ff3b3b 38%, #ff3b3b 62%, transparent 62%),
+        radial-gradient(ellipse 9px 7px at 50% 50%, transparent 38%, #ff9f00 38%, #ff9f00 62%, transparent 62%),
+        radial-gradient(ellipse 9px 7px at 50% 50%, transparent 38%, #ffe000 38%, #ffe000 62%, transparent 62%),
+        radial-gradient(ellipse 9px 7px at 50% 50%, transparent 38%, #00cc44 38%, #00cc44 62%, transparent 62%),
+        radial-gradient(ellipse 9px 7px at 50% 50%, transparent 38%, #3388ff 38%, #3388ff 62%, transparent 62%),
+        radial-gradient(ellipse 9px 7px at 50% 50%, transparent 38%, #cc44ff 38%, #cc44ff 62%, transparent 62%);
+      background-size:   72px 60px, 72px 60px, 72px 60px, 72px 60px, 72px 60px, 72px 60px;
+      background-position:
+        0px   0px,
+        24px  10px,
+        48px  20px,
+        12px  30px,
+        36px  40px,
+        60px  50px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -16,13 +33,17 @@
       color: #fff;
     }
     canvas {
-      border: 2px solid #fff;
+      border: 4px solid #c8b88a;
+      box-shadow: 0 0 0 6px rgba(240,234,216,0.6), 0 8px 32px rgba(0,0,0,0.5);
     }
     #controls {
       margin-top: 12px;
       font-size: 13px;
-      color: #aaa;
+      color: #5a4a2a;
       text-align: center;
+      background: rgba(240,234,216,0.75);
+      padding: 4px 14px;
+      border-radius: 8px;
     }
   </style>
 </head>
